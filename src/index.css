@@ -5,10 +5,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: radial-gradient(circle, rgba(20, 43, 62, 0.798) 20%, #0a0a0a 90%);
+  background: radial-gradient(circle, rgba(15, 27, 58, 0.781) 10%, #050505 80%);
   color: #f3f4f6;
   min-height: 100vh;
 }
+
 
 
 @layer utilities {
