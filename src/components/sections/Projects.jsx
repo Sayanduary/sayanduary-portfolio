@@ -4,7 +4,7 @@ export const Projects = () => {
       title: "Stop Watch",
       description:
         "A lightweight and efficient JavaScript stopwatch with start, stop, and reset functionality, designed for precise time tracking.",
-      image: "src/assets/projectImages/stopwatch.png", // Ensure it's inside the 'public' folder
+      image: "https://i.ibb.co/d48pXc03/stopwatch.png", // Ensure it's inside the 'public' folder
       link: "https://stopwatchsayanduary.vercel.app/",
       technologies: ["JavaScript", "HTML", "Tailwind CSS"],
     },
