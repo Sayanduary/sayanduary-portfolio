@@ -1,12 +1,12 @@
 export const Projects = () => {
   const projects = [
     {
-      title: "Cloud Platform",
+      title: "Stop Watch",
       description:
-        "A scalable cloud platform utilizing modern technologies for efficient deployment and management of applications.",
-      image: "https://source.unsplash.com/400x250/?technology,cloud", // Replace with your project image
-      link: "https://your-project-link.com", // Replace with your project URL
-      technologies: ["React", "Node.js", "AWS", "Docker"],
+        "A lightweight and efficient JavaScript stopwatch with start, stop, and reset functionality, designed for precise time tracking.",
+      image: "src/assets/projectImages/stopwatch.png", // Ensure it's inside the 'public' folder
+      link: "https://stopwatchsayanduary.vercel.app/",
+      technologies: ["JavaScript", "HTML", "Tailwind CSS"],
     },
   ];
 
@@ -26,11 +26,14 @@ export const Projects = () => {
               rel="noopener noreferrer"
               className="block p-6 rounded-xl border border-white/10 hover:-translate-y-2 hover:border-blue-500/30 hover:shadow-[0_2px_12px_rgba(59,130,246,0.2)] transition-all group"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-40 object-cover rounded-lg mb-4 group-hover:opacity-80 transition-all"
-              />
+              <div className="flex justify-center">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="w-64 h-50 object-cover rounded-lg mb-4 group-hover:opacity-80 transition-all"
+                />
+              </div>
               <h3 className="font-bold text-xl mb-2 text-white">
                 {project.title}
               </h3>
