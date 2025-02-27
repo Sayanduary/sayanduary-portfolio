@@ -7,13 +7,13 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex items-center justify-center relative"
     >
-      <div className="text-center z-10 px-4">
+      <div className="text-center z-10 px-4 ">
   {/* Profile Image with Smooth Bouncing Animation */}
   <div className="flex justify-center">
     <motion.img 
-      src="/src/assets/projectImages/PhotoSayanDuary~2.jpg" // Replace with your actual image path
+      src="https://i.ibb.co/39PMdsGs/Photo-Sayan-Duary-2.jpg" // Replace with your actual image path
       alt="Sayan Duary"
-      className="w-24 h-24 md:w-40 md:h-40 rounded-full object-cover"
+      className="w-24 h-24 md:w-40 md:h-40 rounded-full object-cover mt-15 sm:mt-0"
       animate={{ y: [0, -10, 0] }} // Moves up & down
       transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} // Slow, smooth bounce
     />

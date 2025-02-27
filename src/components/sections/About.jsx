@@ -41,7 +41,7 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-center text-transparent">
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-200 to-gray-300 bg-clip-text text-center text-transparent">
           ABOUT ME
         </h2>
 

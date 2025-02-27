@@ -25,7 +25,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen py-20 flex justify-center">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-center text-transparent">
+        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-200 to-gray-300 bg-clip-text text-center text-transparent">
           FEATURED PROJECTS
         </h2>
 
