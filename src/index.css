@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background: radial-gradient(circle, rgba(15, 27, 58, 0.781) 10%, #050505 80%);
+ background: rgb(7,6,22);
+ background: radial-gradient(circle, rgba(7,6,22,1) 20%, rgba(4,0,27,1) 100%, rgba(0,212,255,1) 100%); 
   color: #f3f4f6;
   min-height: 100vh;
 }
