@@ -33,11 +33,10 @@ export const Home = () => {
           <Typewriter
             options={{
               strings: [
-                "Backend engineer with a passion for building scalable APIs.",
-                "Experienced in designing efficient data structures & algorithms.",
-                "Passionate about backend development & problem-solving.",
-                "Familiar with frontend concepts through exposure to React.",
-               "Enabling effective collaboration with frontend teams."
+                "Building scalable APIs.",
+                "Efficient in data structures & algorithms.",
+                "Familiar with frontend concepts",
+                "Collaboration with frontend teams.",
               ],
               autoStart: true,
               loop: true,
