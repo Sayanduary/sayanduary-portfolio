@@ -8,18 +8,19 @@ export const Home = () => {
       className="min-h-screen flex items-center justify-center relative"
     >
       <div className="text-center z-10 px-4 ">
-  {/* Profile Image with Smooth Bouncing Animation */}
-  <div className="flex justify-center mb-1.5 sm:mb-0">
-    <motion.img 
-      src="https://i.ibb.co/39PMdsGs/Photo-Sayan-Duary-2.jpg" // Replace with your actual image path
-      alt="Sayan Duary"
-      className="w-30 h-30 md:w-40 md:h-40 rounded-full object-cover mt-20 sm:mt-0"
-      animate={{ y: [0, -10, 0] }} // Moves up & down
-      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} // Slow, smooth bounce
-    />
-  </div>
+        {/* Profile Image with Smooth Bouncing Animation */}
+        <div className="flex justify-center mb-1.5 sm:mb-0">
+          <motion.img
+            src="https://i.ibb.co/39PMdsGs/Photo-Sayan-Duary-2.jpg" // Replace with your actual image path
+            alt="Sayan Duary"
+            className="w-30 h-30 md:w-40 md:h-40 rounded-full object-cover mt-20 sm:mt-0"
+            animate={{ y: [0, -10, 0] }} // Moves up & down
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} // Slow, smooth bounce
+          />
+        </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-blue-400 leading-tight bg-clip-text text-transparent">
-          Hi, I am <span className="text-gray-300 block sm:inline">Sayan Duary</span>
+          Hi, I am{" "}
+          <span className="text-gray-300 block sm:inline">Sayan Duary</span>
         </h1>
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
           Backend engineer with a passion for building robust and scalable APIs.
@@ -30,7 +31,6 @@ export const Home = () => {
 
         {/* Buttons */}
         <div className="flex justify-center space-x-4">
-         
           <a
             href="#contact"
             className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:bg-blue-500/10 sm:py-2 sm:px-4"
