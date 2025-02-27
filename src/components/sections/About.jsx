@@ -45,7 +45,7 @@ export const About = () => {
           ABOUT ME
         </h2>
 
-        <div className="rounded-xl p-8 border border-white/10 hover:translate-y-1 transition-all">
+        <div className="rounded-xl p-8 border border-white/10 ">
           <p className="text-gray-300 mb-8 text-center leading-relaxed">
             Passionate Developer with expertise in building scalable
             applications and solving complex problems. I have a strong
