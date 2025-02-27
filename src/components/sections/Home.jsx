@@ -35,7 +35,7 @@ export const Home = () => {
               strings: [
                 "Building scalable APIs.",
                 "Efficient in data structures & algorithms.",
-                "Familiar with frontend concepts",
+                "Familiar with frontend concepts.",
                 "Collaboration with frontend teams.",
               ],
               autoStart: true,
