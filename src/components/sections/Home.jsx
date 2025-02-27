@@ -1,33 +1,51 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa"; // Import icons
+import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative"
+      className="min-h-screen flex items-center justify-center relative bg-black text-white"
     >
-      <div className="text-center z-10 px-4 ">
-        {/* Profile Image with Smooth Bouncing Animation */}
-        <div className="flex justify-center mb-1.5 sm:mb-0">
+      <div className="text-center z-10 px-4">
+        {/* Profile Image with Floating Animation */}
+        <div className="flex justify-center mb-3 sm:mb-0">
           <motion.img
-            src="https://i.ibb.co/39PMdsGs/Photo-Sayan-Duary-2.jpg" // Replace with your actual image path
+            src="https://i.ibb.co/39PMdsGs/Photo-Sayan-Duary-2.jpg"
             alt="Sayan Duary"
-            className="w-30 h-30 md:w-40 md:h-40 rounded-full object-cover mt-20 sm:mt-0"
-            animate={{ y: [0, -10, 0] }} // Moves up & down
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} // Slow, smooth bounce
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover mt-20 sm:mt-0 border-4 border-gray-700 shadow-lg"
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-blue-400 leading-tight bg-clip-text text-transparent">
+
+        {/* Heading with Gradient */}
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
           Hi, I am{" "}
-          <span className="text-gray-300 block sm:inline">Sayan Duary</span>
+          <span className="bg-gradient-to-r from-blue-500 to-blue-300 bg-clip-text text-transparent">
+            Sayan Duary
+          </span>
         </h1>
-        <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          Backend engineer with a passion for building robust and scalable APIs.
-          Experienced in designing and implementing efficient data structures
-          and algorithms. Familiar with frontend concepts through exposure to
-          React, enabling effective collaboration with frontend teams.
-        </p>
+
+        {/* Typewriter Effect for Description */}
+        <div className="text-gray-400 text-lg mb-8 max-w-6xl mx-auto">
+          <Typewriter
+            options={{
+              strings: [
+                "Backend engineer with a passion for building scalable APIs.",
+                "Experienced in designing efficient data structures & algorithms.",
+                "Passionate about backend development & problem-solving.",
+                "Familiar with frontend concepts through exposure to React.",
+               "Enabling effective collaboration with frontend teams."
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 50,
+              deleteSpeed: 25,
+            }}
+          />
+        </div>
 
         {/* Buttons */}
         <div className="flex justify-center space-x-4">
@@ -39,9 +57,9 @@ export const Home = () => {
           </a>
 
           <a
-            href="/cv.pdf" // Update this path with the actual CV location
+            href="/cv.pdf"
             download
-            className="flex items-center space-x-2 border border-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:bg-green-500/10 sm:py-2 sm:px-4 "
+            className="flex items-center space-x-2 border border-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:bg-green-500/10 sm:py-2 sm:px-4"
           >
             <FaFileDownload />
             <span>Download CV</span>
@@ -54,7 +72,7 @@ export const Home = () => {
             href="https://www.linkedin.com/in/sayan-duary"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-3xl hover:text-blue-400 transition"
+            className="text-white text-3xl hover:text-blue-500 transition"
           >
             <FaLinkedin />
           </a>
