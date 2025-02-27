@@ -1,3 +1,4 @@
+import { RevealOnScroll } from "./RevealOnScroll";
 /* eslint-disable react/prop-types */
 import {
   FaReact,
@@ -40,34 +41,61 @@ export const About = () => {
       id="about"
       className="min-h-screen flex items-center justify-center py-20"
     >
-      <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-200 to-gray-300 bg-clip-text text-center text-transparent">
-          ABOUT ME
-        </h2>
+      <RevealOnScroll>
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-200 to-gray-300 bg-clip-text text-center text-transparent">
+            ABOUT ME
+          </h2>
 
-        <div className="rounded-xl p-8 border border-white/10 ">
-          <p className="text-gray-300 mb-8 text-center leading-relaxed">
-            Passionate Developer with expertise in building scalable
-            applications and solving complex problems. I have a strong
-            understanding of
-            <span className="text-blue-400 font-semibold">
-              {" "}
-              Data Structures & Algorithms (DSA){" "}
-            </span>
-            , which helps me write efficient and optimized code.
-          </p>
+          <div className="rounded-xl p-8 border border-white/10 ">
+            <p className="text-gray-300 mb-8 text-center leading-relaxed">
+              Passionate Developer with expertise in building scalable
+              applications and solving complex problems. I have a strong
+              understanding of
+              <span className="text-blue-400 font-semibold">
+                {" "}
+                Data Structures & Algorithms (DSA){" "}
+              </span>
+              , which helps me write efficient and optimized code.
+            </p>
 
-          {/* Skills Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <SkillSection
-              title="Programming Languages"
-              skills={programmingLanguages}
-            />
-            <SkillSection title="Backend" skills={backendSkills} />
-            <SkillSection title="Frontend" skills={frontendSkills} />
+            {/* Skills Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <SkillSection
+                title="Programming Languages"
+                skills={programmingLanguages}
+              />
+              <SkillSection title="Backend" skills={backendSkills} />
+              <SkillSection title="Frontend" skills={frontendSkills} />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div className="p-6 rounded-xl border-white/10 border">
+              <h3 className="text-xl font-bold mb-4">Education</h3>
+              <ul className="list-disc list-inside text-gray space-y-2">
+                <li>
+                  <strong>B.C.A Computer Science</strong> Netaji Subhash
+                  Engineering College (ongoing)
+                </li>
+                <li>
+                  <strong>Relavant Coursework:</strong> Data Structures , Web
+                  Development , Backend...
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-xl border-white/10 border">
+              <h3 className="text-xl font-bold mb-4">Work Experience</h3>
+              <div className="space-y-4 text-gray-300">
+                <div>
+                  <h4></h4>
+                  <p></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </RevealOnScroll>
     </section>
   );
 };
