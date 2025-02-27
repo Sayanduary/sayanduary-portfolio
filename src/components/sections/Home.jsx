@@ -19,16 +19,10 @@ export const Home = () => {
 
         {/* Buttons */}
         <div className="flex justify-center space-x-4">
-          <a
-            href="#projects"
-            className="bg-red-500 text-white py-3 px-6 font-bold transition relative overflow-hidden hover:shadow-[0_0_40px_rgba(239,68,68,0.6)] rounded"
-          >
-            View Projects
-          </a>
-
+         
           <a
             href="#contact"
-            className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:bg-blue-500/10"
+            className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(59,130,246,0.4)] hover:bg-blue-500/10 sm:py-2 sm:px-4"
           >
             Contact Me
           </a>
@@ -36,7 +30,7 @@ export const Home = () => {
           <a
             href="/cv.pdf" // Update this path with the actual CV location
             download
-            className="flex items-center space-x-2 border border-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:bg-green-500/10"
+            className="flex items-center space-x-2 border border-green-500/50 text-green-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:shadow-[0_0_40px_rgba(34,197,94,0.4)] hover:bg-green-500/10 sm:py-2 sm:px-4 "
           >
             <FaFileDownload />
             <span>Download CV</span>
