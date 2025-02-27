@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa"; // Import icons
 
 export const Home = () => {
@@ -7,8 +8,18 @@ export const Home = () => {
       className="min-h-screen flex items-center justify-center relative"
     >
       <div className="text-center z-10 px-4">
+  {/* Profile Image with Smooth Bouncing Animation */}
+  <div className="flex justify-center">
+    <motion.img 
+      src="/src/assets/projectImages/PhotoSayanDuary~2.jpg" // Replace with your actual image path
+      alt="Sayan Duary"
+      className="w-24 h-24 md:w-40 md:h-40 rounded-full object-cover"
+      animate={{ y: [0, -10, 0] }} // Moves up & down
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }} // Slow, smooth bounce
+    />
+  </div>
         <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-blue-400 leading-tight bg-clip-text text-transparent">
-          Hi, I am <span className="text-gray-300">Sayan Duary</span>
+          Hi, I am <span className="text-gray-300 block sm:inline">Sayan Duary</span>
         </h1>
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
           Backend engineer with a passion for building robust and scalable APIs.
