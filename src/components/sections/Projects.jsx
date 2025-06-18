@@ -43,7 +43,7 @@ export const Projects = () => {
             {/* Enhanced Header */}
             <div className="text-center mb-16">
               <div className="inline-block">
-                <h2 className="text-5xl md:text-6xl font-black mb-4 bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+                <h2 className="text-3xl md:text-4xl font-semibold mb-4 bg-gradient-to-r from-gray-100 via-white to-gray-200 bg-clip-text text-transparent">
                   FEATURED PROJECTS
                 </h2>
                 <div className="h-1 w-32 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mx-auto"></div>
