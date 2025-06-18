@@ -7,7 +7,7 @@ export const Projects = () => {
       title: "TrackiFy",
       description:
           "A robust and scalable backend API for managing subscriptions built with Node.js, Express.js, and MongoDB. This system provides comprehensive subscription management capabilities including user authentication, subscription CRUD operations, renewal tracking, and automated reminder workflows.",
-      image:"/TrackiFy.png",
+      image:"https://res.cloudinary.com/dpoxhqkhx/image/upload/v1750269443/file_00000000517461f8be9d43fcd2c46338_ymw9x7.png",
       link: "https://github.com/Sayanduary/TrackiFy-SubscriptionTracker-BackendProject",
       github: "https://github.com/Sayanduary/TrackiFy-SubscriptionTracker-BackendProject",
       technologies: ["JAVASCRIPT", "EXPRESS", "MONGO DB","UPSTASH WORKFLOW","ARCJET"],
