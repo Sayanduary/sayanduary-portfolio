@@ -23,9 +23,8 @@ export const Home = () => {
           <span className="text-gray-300 block sm:inline">Sayan Duary</span>
         </h1>
         <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-          Backend engineer with a passion for building robust and scalable APIs.
-          Experienced in designing and implementing efficient data structures
-          and algorithms.
+          Currently expanding my expertise in backend development, data structures and algorithms,
+          and database management. Always eager to learn new technologies and best practices.
         </p>
 
         {/* Buttons */}
